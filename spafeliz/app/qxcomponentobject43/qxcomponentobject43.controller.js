@@ -8,11 +8,11 @@
  * Controller of the spafelizApp
  */
 angular.module('spafelizApp')
-  .controller('Qxcomponentobject43Ctrl','Qxcomponentobject43Ctrl');
+  .controller('qxcomponentobject43Ctrl',qxcomponentobject43Ctrl);
   
 
    /** @ngInject */
-   function Qxcomponentobject43Ctrl($scope,Qxcomponentobject43Service){
+   function qxcomponentobject43Ctrl($scope,qxComponentObject43Service){
     /**
     * Funcion de Inicio del Componente Sin la Generacion del HTML
     */
@@ -24,4 +24,4 @@ angular.module('spafelizApp')
       'AngularJS',
       'Karma'
     ];
-  });
+  };

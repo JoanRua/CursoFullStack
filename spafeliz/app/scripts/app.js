@@ -18,8 +18,19 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.router'
-  ]);
+    'ui.router',
+    'oc.lazyLoad',
+  ]).config(ocLazyLoadConfig);
+
+   /** @ngInject */
+  function ocLazyLoadConfig($ocLazyLoadProvider) {
+    $ocLazyLoadProvider.config({
+      modules: [{
+        name: 'spafelizapp.ejemplo',
+        files: ['qxcomponentobject43/qxcomponentobject43.controller.js','qxcomponentobject43/qxcomponentobject43.directive.js','qxcomponentobject43/qxcomponentobject43.service.js']
+      }]
+    });
+  };
   /*
   .config(
     /*function ($routeProvider) {

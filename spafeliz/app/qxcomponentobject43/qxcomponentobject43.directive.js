@@ -46,6 +46,7 @@ angular.module('spafelizApp')
         function _onqxComponentObject43ElementClick($evt) {
           console.log('onqxComponentObject43ElementClick');
       };
-      };
+      }
 
-  };
+  }
+}

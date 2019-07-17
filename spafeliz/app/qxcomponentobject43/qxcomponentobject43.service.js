@@ -8,9 +8,9 @@
  * Service in the spafelizApp.
  */
 angular.module('spafelizApp')
-  .service('qxComponentObject43', qxComponentObject43Provider);
+  .service('qxComponentObject43Service', qxComponentObject43ServiceProvider);
 
    /** @ngInject */
-   function qxComponentObject43Provider () {
+   function qxComponentObject43ServiceProvider () {
     // AngularJS will instantiate a singleton by calling "new" on this function
   };

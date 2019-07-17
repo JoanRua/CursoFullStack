@@ -20,8 +20,8 @@ var aboutState = {
 var contactState = {
     name:'contact',
     url:'/contact',
-    templateUrl:'views/myroute.html',
-    controller: 'MyrouteCtrl as myroute'
+    templateUrl:'qxcomponentobject43/qxcomponentobject43.html' /*,
+    controller: 'MyrouteCtrl as myroute'*/
 };
 $stateProvider
         .state('home',mainState)
