@@ -22,13 +22,35 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-
-
- <div class="container">
- <ng-include src="'views/home.html'"></ng-include>
-
+<div class="header">
+    <div class="navbar navbar-light bg-light navbar-expand-md" role="navigation">
+        <div class="container">
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
+            data-target="#js-navbar-collapse"> <span class="sr-only">Toggle navigation</span>
+&#x2630;</button> <a class="navbar-brand"
+            href="#!/">spafeliz</a>
+            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active nav-item"><a href="#!/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item"><a ng-href="#!/about" href="#!/about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item"><a ui-sref="contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
+ <div class="container">
+    <div ui-view></div>
+</div>
+<div class="footer">
+    <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    </div>
+</div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -68,7 +90,6 @@
         <script src="scripts/services/myservice.js"></script>
         <script src="scripts/directives/qxcomponentobject.js"></script>
         <script src="scripts/directives/qxcomponentobject2.js"></script>
-        <script src="scripts/services/spaservices.factory.js"></script>
         <!-- endbuild -->
 </body>
 </html>

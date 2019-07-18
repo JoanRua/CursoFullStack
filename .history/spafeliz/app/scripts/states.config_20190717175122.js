@@ -2,7 +2,7 @@
 
 angular.module('spafelizApp').config(settings);
 
-settings.$inject = ["$stateProvider","$urlRouterProvider"];
+settings.$inject = ["$stateProvider"];
 
 function settings($stateProvider,$urlRouterProvider){
 
@@ -34,11 +34,10 @@ $stateProvider
         .state('home',homeState)
         .state('main',mainState)
         .state('about',aboutState)
-        .state('contact',contactState);
-        
-
-$urlRouterProvider.when('', '/');
-}
+        .state('contact',contactState)
+        ;
+};
+$urlRouterProvider.otherwise("/")
 
 /*
 Leer Jhon Papa

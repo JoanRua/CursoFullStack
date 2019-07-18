@@ -34,11 +34,11 @@ $stateProvider
         .state('home',homeState)
         .state('main',mainState)
         .state('about',aboutState)
-        .state('contact',contactState);
-        
+        .state('contact',contactState)
+        ;
+};
 
-$urlRouterProvider.when('', '/');
-}
+$urlRouterProvider.otherwise("/")
 
 /*
 Leer Jhon Papa

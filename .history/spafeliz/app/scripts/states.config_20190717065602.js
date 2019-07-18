@@ -2,43 +2,34 @@
 
 angular.module('spafelizApp').config(settings);
 
-settings.$inject = ["$stateProvider","$urlRouterProvider"];
+settings.$inject = ["$stateProvider"];
 
-function settings($stateProvider,$urlRouterProvider){
-
-var homeState = {
-        abstract:true,
-        name:'home',
-        templateUrl:'views/home.html'
-};
-
+function settings($stateProvider){
 var mainState = {
-    name:'home.main',
+    name:'main',
     url:'/',
     templateUrl:'views/main.html',
     controller: 'MainCtrl as main'
 };
 var aboutState = {
-    name:'home.about',
+    name:'about',
     url:'/about',
     templateUrl:'views/about.html',
     controller: 'AboutCtrl as about'
 };
 var contactState = {
-    name:'home.contact',
+    name:'contact',
     url:'/contact',
     templateUrl:'qxcomponentobject43/qxcomponentobject43.html' /*,
     controller: 'MyrouteCtrl as myroute'*/
 };
 $stateProvider
-        .state('home',homeState)
-        .state('main',mainState)
+        .state('home',mainState)
         .state('about',aboutState)
-        .state('contact',contactState);
-        
+        .state('contact',contactState)
+        ;
+};
 
-$urlRouterProvider.when('', '/');
-}
 
 /*
 Leer Jhon Papa
