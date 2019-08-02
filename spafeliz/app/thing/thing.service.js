@@ -1,13 +1,18 @@
+(function() {
 'use strict';
 
 /**
  * @ngdoc service
- * @name spafelizApp.qxComponentObject8
+ * @name spafelizApp.thing
  * @description
- * # qxComponentObject8
+ * # thing
  * Service in the spafelizApp.
  */
 angular.module('spafelizApp')
-  .service('qxComponentObject8', function () {
+  .service('thingService', thingServiceProvider);
+
+   /** @ngInject */
+   function thingServiceProvider () {
     // AngularJS will instantiate a singleton by calling "new" on this function
-  });
+  };
+})();

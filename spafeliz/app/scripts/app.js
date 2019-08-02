@@ -30,7 +30,7 @@ angular
         files: ['qxcomponentobject43/qxcomponentobject43.controller.js','qxcomponentobject43/qxcomponentobject43.directive.js','qxcomponentobject43/qxcomponentobject43.service.js']
       }]
     });
-  };
+  }
   /*
   .config(
     /*function ($routeProvider) {

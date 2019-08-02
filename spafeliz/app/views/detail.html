@@ -1,0 +1,14 @@
+<div id="services" class="container">
+    <div style="background-image: url('{{serviceDetail.image}}')" class="service-item">
+        <div class="content-service">
+            <h4>{{ serviceDetail.name }}</h4>
+            <p>{{ serviceDetail.description }}</p>
+            <p>COP {{ serviceDetail.cost | number}}</p>
+        </div>
+    </div>
+
+     <!--<a ui-sref="home.book({ id:item.id })"> -->
+    <a href="views/detail/{{item.id}}">
+        <button class="btn btn-primary">Reservar</button>
+    </a>
+</div>

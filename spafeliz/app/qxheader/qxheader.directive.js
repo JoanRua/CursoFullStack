@@ -17,7 +17,7 @@ angular.module('spafelizApp')
       templateUrl:'qxheader/qxheader.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the qxheader directive');
+        //element.text('this is the qxheader directive');
 
         
     /**
@@ -36,17 +36,10 @@ angular.module('spafelizApp')
         );
 
 
-        jqWindow.on('click', _onWindowClick);
-
-        scope.$on('$destroy', function() {
-          jqWindow.off('click', _onWindowClick);
-        });
-
-        function _onWindowClick($evt) {};
         
         function _onqxComponentObject43ElementClick($evt) {
           console.log('onqxheaderElementClick');
-      };
+      }
       }
 
   }

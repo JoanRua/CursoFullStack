@@ -1,23 +1,26 @@
+<!-- header -->
+<header>
+<!-- Add your site or application content here -->
 <div class="header">
     <div class="navbar navbar-light bg-light navbar-expand-md" role="navigation">
         <div class="container">
             <button type="button" class="navbar-toggler collapsed" data-toggle="collapse"
             data-target="#js-navbar-collapse"> <span class="sr-only">Toggle navigation</span>
 &#x2630;</button> <a class="navbar-brand"
-            href="#!/">spafeliz</a>
+            ui-sref="home.main">spafeliz</a>
             <div class="collapse navbar-collapse" id="js-navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active nav-item"><a href="#!/" class="nav-link">Home</a>
+                    <li class="active nav-item"><a ui-sref="home.main" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item"><a ng-href="#!/about" href="#!/about" class="nav-link">About</a>
+                    <li class="nav-item"><a ui-sref="home.about" class="nav-link">About</a>
                     </li>
-                    <li class="nav-item"><a ui-sref="contact" class="nav-link">Contact</a>
+                    <li class="nav-item"><a ui-sref="home.main" class="nav-link">Contact</a>
                     </li>
+					<li class="nav-item"><a href="https://api.whatsapp.com/send?phone=573005875500" target="_blank">Llamanos</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-
-
-<div></div>
+</header>
+<!-- //header -->

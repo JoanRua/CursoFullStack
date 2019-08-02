@@ -15,6 +15,29 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+            <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	
+	<!-- css files -->
+    <link href="styles/css_slider.css" rel="stylesheet"><!-- Slider css -->
+    <link href="styles/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="styles/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="styles/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	
+
   </head>
   <body ng-app="spafelizApp">
     <!--[if lte IE 8]>
@@ -60,8 +83,9 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-         <script src="qxheader/qxheader.directive.js"></script>
         <script src="scripts/states.config.js"></script>
+        <script src="qxheader/qxheader.directive.js"></script>
+
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/myroute.js"></script>
@@ -71,6 +95,10 @@
         <script src="scripts/directives/qxcomponentobject2.js"></script>
         <script src="scripts/services/spaservices.factory.js"></script>
        
+        <script src="scripts/filters/currencyformat.filter.js"></script>
+        <script src="scripts/directives/footersection.directive.js"></script>
+        <script src="scripts/services/spabook.js"></script>
+        <script src="scripts/controllers/spabook.js"></script>
         <!-- endbuild -->
 </body>
 </html>
