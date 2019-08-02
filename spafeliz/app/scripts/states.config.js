@@ -39,10 +39,18 @@ var contactState = {
 
 var detailState = {
         name:'home.detail',
-        url:'/detail/{id}',
+        url:'/detail',
         templateUrl:'views/detail.html',
         controller: 'DetailCtrl as Detail'
     }
+
+    var detailEspecificoState = {
+        name:'detailpublico',
+        url:'/detailpublico/{id}',
+        templateUrl:'views/detail.html',
+        controller: 'DetailCtrl as Detail'
+    }
+
 
 var bookState = {
         name:'home.book',
@@ -50,6 +58,15 @@ var bookState = {
         templateUrl:'views/book.html',
         controller: 'BookCtrl as book'
     };
+
+    var bookEspecificoState = {
+        name:'bookpublico',
+        url:'/bookpublico',
+        templateUrl:'views/book.html',
+        controller: 'BookCtrl as book'
+    };
+
+
 $stateProvider
         .state('home',homeState)
         .state('main',mainState)
@@ -57,7 +74,9 @@ $stateProvider
         .state('contact',contactState)
         .state('service',servivesState)
         .state('detail',detailState)
-        .state('book',bookState);
+        .state('detailpublico',detailEspecificoState)
+        .state('book',bookState)
+        .state('bookpublico',bookEspecificoState);
         
 
         $urlRouterProvider.when('', '/');

@@ -1,14 +1,16 @@
+
+<img src= "../images/bannerspa.jpg">
 <div id="services" class="container">
-    <div style="background-image: url('{{serviceDetail.image}}')" class="service-item">
+    <div style="background-image: url('{{Detail.serviceDetail.image}}')" class="service-item">
         <div class="content-service">
-            <h4>{{ serviceDetail.name }}</h4>
-            <p>{{ serviceDetail.description }}</p>
-            <p>COP {{ serviceDetail.cost | number}}</p>
+            <h4>{{ Detail.serviceDetail.name }}</h4>
+            <p>{{ Detail.serviceDetail.description }}</p>
+            <p>COP {{ Detail.serviceDetail.cost | number}}</p>
         </div>
     </div>
 
      <!--<a ui-sref="home.book({ id:item.id })"> -->
-    <a href="views/detail/{{item.id}}">
+    <a href="#!bookpublico/{{Detail.serviceDetail.id}}">
         <button class="btn btn-primary">Reservar</button>
     </a>
 </div>

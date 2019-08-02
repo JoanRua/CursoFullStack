@@ -35,6 +35,7 @@ module.exports = {
       .catch(err => res.status(500).send("error"));
   },
   reservas_create: function(req, res) {
+    console.log(req.body)
     reservaModel
       .create(req.body)
       .then(data => {
