@@ -41,7 +41,7 @@
     "test": "karma start test\\karma.conf.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "generator-angular": "^0.16.0"
   }
 }
